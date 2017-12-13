@@ -1,3 +1,7 @@
+<html>
+<script type="text/javascript" src="js/file_test_n_tools.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
 <?php 
 // phpinfo();
 
@@ -5,7 +9,7 @@ $prompt = array(
 	"option" => "-T",
 	"values" => array(
 		// "test001"
-		"test_person"
+		"test001"
 	)
 );
 
@@ -22,13 +26,16 @@ class Our_Tools {
 
 }
 
-// $person01 = new Person();
-
 if (
 	($prompt["option"] == "-T") 
 	&& ($prompt["values"][0] == "test001" )
-){
-	print "this is very important test";
+){?>
+
+	<script>
+		myFunction();
+	</script>
+
+<?php
 }
 else if (
 	($prompt["option"] == "-T") 
@@ -37,3 +44,5 @@ else if (
 	$person01 = new Person();
 }
 ?>
+
+</html>
