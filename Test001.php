@@ -31,15 +31,6 @@ class Our_Tools {
 		print "inside our_tools";
 	}
 
-	function connection_pg(
-		$host = "192.168.10.5",
-		$db_name = "production",
-		$user = "op1",
-		$passw = "aa"
-	){
-
-	}
-
 	public static function test002(){
 		print "this is a public static_method";
 	}
@@ -57,7 +48,8 @@ class Our_Tools {
 
 			// echo PG_10_5_PRODUCTION;
 			// print $pg_10_5_production;
-			$connProd = new PDO(PG_10_5_PRODUCTION_IP_DB, 
+			$connProd = new PDO(
+				PG_10_5_PRODUCTION_IP_DB, 
 				$user, 
 				$pass, 
 				$pdo_options
